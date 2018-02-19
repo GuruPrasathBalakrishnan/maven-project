@@ -27,7 +27,7 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        sh "scp -i /c/Program Files (x86)/Jenkins/tomcatdemo.pem **/target/*.war ec2-user@$13.59.12.99:/var/lib/tomcat7/webapps"
+                        sh "scp -i /c/Program Files (x86)/Jenkins/tomcatdemo.pem **/target/*.war ec2-user@13.59.12.99:/var/lib/tomcat7/webapps"
                     }
                 }
 
